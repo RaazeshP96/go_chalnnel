@@ -14,7 +14,7 @@ func main() {
 		"https://golang.org/",
 	}
 	for _, link := range links {
-		checkLink(link)
+		go checkLink(link)
 	}
 }
 func checkLink(link string) {
